@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "engines": {
-    "node": "22.x"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
+    "start": "nodemon src/server.js",
     "db:migrate": "sequelize-cli db:migrate --config config/config.js",
     "db:undo": "sequelize-cli db:migrate:undo --config config/config.js",
     "dev": "nodemon src/server.js"
